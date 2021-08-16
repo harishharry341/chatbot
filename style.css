@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+.menubar{
+    background-color: #0f2346;
+    text-align: center;
+}
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menubar ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 8px;
+}
+.main-box{
+    margin-top: 260px;
+}
+.collageName{
+    font-size: 5rem; 
+    font-family:algerian;
+    color: #0f2346;
+    text-align: center;
+}
+/*.conlsubName{
+     font-family: Monotype Corsiva;font-size: 0.5rem;color: #fff;
+}*/
+.row{
+    background-color: #cc9933;
+}
+.my{
+    background-color: #0f2346;
+    
+}
+.subname{
+    margin: 3rem;
+    margin-bottom: 0.3rem;
+    font-family: Monotype Corsiva;
+    font-size: 2rem;
+    color: #000;
+    text-align: right;
+    position: relative;
+    top: -60px; 
+    left: -16rem;   
+}
+.lowline{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: -3.5rem;
+    color: rgb(22, 18, 18);
+}
+.links{
+    background-color: #0f2346;
+    width: 20rem;
+    height: 22rem;
+    padding: 1rem;
+    margin-top: -2rem;
+    margin: 1rem;
+    position: relative;
+    bottom: -4rem;
+}
+
+
+
+/****chat css******/
+
+.char-box{
+    height: 430px;
+    width: 390px;
+    background-color: rgb(245, 237, 237);
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -360px;
+    left: 75%;
+    /* position: absolute; */
+}
+/* client about*/
+.client{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    background-color: #77b3d4;
+    padding: 20px;
+}
+
+.client img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: zoom-out;
+    object-fit: cover;
+}
+/*.chats img{*/
+    /*height: 100%;
+    width: 107%;
+    margin-left: 12px;
+    position: relative;
+    bottom: 127px;
+    left: -27px;*/
+/*}*/
+
+.client-info{
+    color: #fff;
+    padding: 15px;
+}
+.client-info p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: medium;
+}
+/* chart content*/
+.chats{
+    width: 100%;
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+    font-size: small;
+    overflow-y: scroll !important;
+    height: 300px;
+    margin-bottom: 5px;;
+
+}
+.maha{
+    width: 100%;
+    padding: 0 15px;
+    color: #fff;
+    position: relative;
+    font-size: small;                
+}
+.client-chats{
+    width: 80%;
+    word-wrap: break-word;
+    background-color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 0px;
+    margin: 10px 0;
+}
+#userText{
+    width: 60%;
+    word-wrap: break-word;
+    background-color: #00539CFF;
+    color:#fff;
+    padding: 7px 10px;
+    border-radius: 10px 10px 0px 10px;
+    margin: 4px 0 5px auto;
+    text-align: right !important;
+    position: relative;
+    top: -9rem;
+}
+
+/* input section*/
+.chart-input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: #fff;
+    padding: 15px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+.chart-input input {
+    width: calc(100% - 40px);
+    height: 100px;
+    background-color: #fff;
+    border-radius: 0px;
+    color: black;
+    font-size: 1.2em;
+    padding: 0 15px;
+    display: flex;
+}
+.sent-btn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.sent-btn:active{
+    transform: scale(0.85);
+}
+.sent-btn img{
+    width: 100%;
+    height: 100%;
+}
+
+/* chat button icon button */
+.chat-btn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    bottom: -7px;
+    right: 180px;
+}
+.chat-btn img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    transition: 0.6s ease-in-out;
+}
+.chat-btn:hover img{
+    transform: rotate(90deg);
+}
+a{
+    text-decoration: none;
+}
+.ma{
+    padding: 0%;
+    margin: 0%;
+    text-align: center;  
+    height: 21px;
+}
+.ma a{
+    text-decoration: none;
+    display: block;
+    background-color: #77b3d4;
+    color: aquamarine;
+    font-size: 0.85rem;
+    width: 86px;
+    position: relative;
+    top: -17px;
+    left: -5px;
+}
+.exam{
+    padding: 0%;
+    margin: 0%;
+    width: 77px;
+    height: 21px;
+}
+.exam a{
+        text-decoration: none;
+        display: block;
+        background-color: #77b3d4;
+        position: relative;
+        left: 7rem;
+        top: -57px;
+}
+.Holidays{
+    padding: 0%;
+    margin: 0%;
+    width: 77px;
+    height: 21px;
+}
+.Holidays a{
+    color: #000;
+    display: block;
+    background-color: #77b3d4;
+    position: relative;
+    left: 114px;
+    top: -77px;
+    width: 86px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Scholar{
+    padding: 0%;
+    margin: 0%; 
+    height: 21px;
+}
+.Scholar a {
+    color: black;
+    background-color: #77b3d4;
+    display: block;
+    width: 86px;
+    position: relative;
+    left: 14rem;
+    bottom: 98px;
+    font-weight: bold;
+    text-align: center;
+}
+.Fee{
+    padding: 0%;
+    margin: 0%;
+    width: 81px;
+    height: 15px;
+}
+.Fee a{
+    display: block;
+    background-color: #77b3d4;
+    position: relative;
+    left: 114px;
+    bottom: 93px;
+    width: 86px;
+    text-align: center;
+}
+.Contact{
+    padding: 0%;
+    margin: 0%;
+    width: 77px;
+}
+.Contact a{
+    color: black;
+    background-color: #77b3d4;
+    display: block;
+    position: relative;
+    left: 14rem;
+    bottom: 108px;
+    width: 86px;
+    text-align: center;
+}
+
+/*****drop down*****/
+.dropbtn {
+  background-color: #0f2346;
+  color: #cc9933;
+  padding: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #0f2346;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f2346;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #cc9933;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/****chart dropdown ****/
+.dropbtns {
+    background-color: #77b3d4;
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+    width: 115px;
+    border: none;
+    position: relative;
+    bottom: 00.5rem;
+  }
+  
+  .dropdownchart {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownch-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdownch-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownch-content a:hover {background-color: #ddd;}
+  
+  .dropdownchart:hover .dropdownch-content {display: block;}
+  
+  .dropdownchart:hover .dropbtns {background-color: #3e8e41;}
+
+  /****exam****/
+  .dropbtnexam {
+    background-color: #77b3d4;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    font-size: 14px;
+    border: none;
+    width: 84px;
+    border: none;
+    position: relative;
+    top: -12px;
+    left: -4px;
+    height: 19px;
+    font-weight: bold;
+  }
+  
+  .dropdownexam {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdownexam-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdownexam-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownexam-content a:hover {background-color: #ddd;}
+  
+  .dropdownexam:hover .dropdownexam-content {display: block;}
+  
+  .dropdownexam:hover .dropbtnexam {background-color: #3e8e41;}
+  
+  

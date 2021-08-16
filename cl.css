@@ -1,0 +1,19 @@
+.cl{
+        padding: 0%;
+        margin: 0%; 
+        height: 21px;
+}
+
+.cl a {
+    color: black;
+    background-color: #77b3d4;
+    display: block;
+    position: relative;
+    left: 58rem;
+    width: 52px;
+    font-weight: bold;
+    text-align: center;
+    height: 21px;
+    top: 20px;
+
+}
