@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-fluid fixed-top">
+            <div class="row  ">
+                <div class="col-4 p-3">
+                    <img src="college-1.png" class="img-rounded" alt="college Logo" height="200px" width="auto">
+                </div>
+                <div class="col-8">
+                    <p class="collageName">Salvatore college</p>
+                    <p class="subname">Magical Place Of Achivements</p>
+                    <p class="lowline">(Affiliated to Osminia University Reaccredited by NAAC(A))|| Bangalore-560002
+                    </p>
+
+                </div>
+                <marquee bgcolor="black" style="color: #fff;"> NOTE: &nbsp;1. Exam will be cancelled due to
+                    covid-19&nbsp;&nbsp;2: &nbsp;Stay safe stay healthy </marquee>
+            </div>
+            <div class="container-fluid col-md-12">
+                <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarsExample01">
+                            <ul class="navbar-nav me-auto mb-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Gallery.html" target="_blank">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="Campus Drives.pdf" target="_blank">Campus
+                                        Drive</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="http://localhost/harish.php" target="_blank">Student Details
+                                    </a>
+                            </ul>
+                            <!--<form>
+                      <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    </form>-->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main-box">
+        <div class="links">
+
+            <h3 style="text-decoration-line: underline; ">Quick links</h3>
+            <ul>
+                <li><a href="application.pdf" target="_blank"style="color: #cc9933;">Admissions</a></li>
+                <li><a href="Fee Payment Details.pdf" target="_blank"style="color: #cc9933;">Fee</a></li>
+               <div class="dropdown">
+                    <ul>
+                        <li  onclick="mys()" class="dropbtn">Time Table</li>
+                    </ul>
+                   
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="1.pdf">sem1</a>
+                        <a href="2.pdf">sem2&3</a>
+                        <a href="4.pdf">sem4</a>
+                        <a href="5.pdf">sem5</a>
+                        <a href="6.pdf">sem6</a>
+                    </div>
+                </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function mys() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function (event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script><br>
+                <div class="dropdown">
+                    <ul>
+                        <li  onclick="my()" class="dropbtn">exams</li>
+                    </ul>
+                
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="1.pdf">sem1</a>
+                        <a href="2.pdf">sem2</a>
+                        <a href="3.pdf">sem3</a>
+                        <a href="4.pdf">sem4</a>
+                        <a href="5.pdf">sem5</a>
+                        <a href="6.pdf">sem6</a>
+                    </div>
+                </div>
+
+                <script>
+                    /* When the user clicks on the button, 
+                    toggle between hiding and showing the dropdown content */
+                    function my() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function (event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+
+
+                <li><a href="facilities.html" target="_blank" style="color: #cc9933;">Facilities</a></li>
+                <li><a href="Scholarship.pdf" target="_blank"style="color: #cc9933;">Scholar ship</a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+
+
+
+        </div>
+        <div class="char-box" style="display: none;">
+           
+            <div class="client">
+                <img src="nik.jpg" alt="chatbot-right-icon" />
+                <div class="client-info">
+                    <h2 style="color: #0f2346; font-weight: bolder; position: relative; top: 10px;">KLAUS</h2>
+                    <p style="position: relative; left: 2px;">online</p>
+                </div>
+            </div>
+          
+
+
+            <div class="chats" >
+                <div class="client-chats">Hello! I'm KLAUS</div>
+                <div class="client-chats">Welcome to Students portal Support </div>
+                <div class="client-chats">Are you ?</div>
+                <div class="op">
+
+                    <button onclick="myFunction()" style="background-color: #77b3d4;">Already a Student</button>
+                    <button onclick="myFunction2()" style="background-color: #77b3d4;">New Student</button>
+                    <div id="myDIV" style="display:none;">
+                        <div class="client-chats">I can help you with </div>
+                        <div class="row" style="background: #fff; display: inline;">
+                            <div class="col-3">
+                                <div class="ma">
+                                    <a href="class tt.pdf"  onclick="clsText(this)" target="_blank"  style="color: black; ">Time Tables</a>
+                                    </div><br>
+                                    <div class="dropdownexam">
+                                        <button class="dropbtnexam">Exams</button>
+                                        <div class="dropdownexam-content">
+                                          <a href="1.pdf" target="_blank">sem 1</a>
+                                          <a href="2.pdf" target="_blank">sem 2</a>
+                                          <a href="3.pdf" target="_blank">sem 3</a>
+                                          <a href="4.pdf"target="_blank">sem 4</a>
+                                          <a href="5.pdf"target="_blank">sem 5</a>
+                                          <a href="6.pdf"target="_blank">sem 6</a>
+                                        </div>
+                                      </div>
+                                    <div class="Holidays">
+                                    <a href="Holidays list.pdf" target="_blank"style="color: #000;">Holidays List</a>
+                                    </div>
+                                    <div class="Scholar"><a href="Scholarship.pdf" target="_blank" style="color: black;">Scholarship</a></div><br>
+                                    <div class="Fee">
+                                    <a href="Fee Payment Details.pdf" target="_blank" style="color: black;">Fee Payment</a>
+                                    </div>
+                                    <div class="Contact">
+                                        <a href="contact us.html" target="_blank" style="color: black;">Contact Us</a><br>
+                                     </div>
+                            </div>
+                      
+                      
+                        </div>
+                    </div>
+                    <div id="div2" style="display:none;">
+                        <div class="client-chats">Looks like you are intrested in our college</div>
+                        <div class="client-chats">I can help you with</div>
+                        <a href="courses offered.pdf" target="_blank" style="display: block; background-color: #77b3d4; padding: 8px; width: 114px; color: black; height: 38px; font-size: 12px;">Courses Offered</a><br>
+                        <div class="dropdownchart">
+                            <button class="dropbtns" style="color: black; height: 36px; font-weight: bold; font-size: 13px;">Admissions</button>
+                            <div class="dropdownch-content">
+                              <a href="application.pdf" target="_blank">Application</a>
+                              <a href="scDepartment Wise Fee Details.pdf" target="_blank">Department Fee Details</a>
+                            </div>
+                          </div><br>
+                          
+                          <a href="facilities.html" target="_blank" style="display: block; background-color: #77b3d4; padding: 8px; width: 108px; position: relative; left: 9rem; top: -92px; color: black; text-align: center;">Facilities</a>
+                          <a href="http://localhost/registration.html" target="_blank" style="display: block; background-color: #77b3d4; padding: 8px; width: 108px; position: relative; left: 9rem; top: -78px; color: black; text-align: center;">Registration</a>
+                          <a href="Campus Drives.pdf" target="_blank" style="display: block; background-color: #77b3d4; padding: 8px; color: black;
+                          width: 111px;
+                          position: relative;
+                          left: 9rem;
+                          bottom: 63px;">Campus Drives</a>
+                          <a href="contact us.html" target="_blank" style="    display: block;
+                          background-color: #77b3d4;
+                          color: black;
+                          padding: 8px;
+                          width: 117px;
+                          position: relative;
+                          top: -98px;
+                          text-align: center;
+                          font-weight: bold;">Contact Us</a>
+                       </div>
+                      
+                   
+                </div>
+
+                
+                <div id="userText"  style="display:none;" >
+                    Already a
+                </div>
+
+            </div>
+
+
+
+           <div class="chart-input">
+                <input type="text" placeholder="Enter message" />
+                <button class="sent-btn">
+                    <img src="send.png" alt="sent-btn">
+                </button>
+            </div>
+
+        </div>
+
+        <div class="chat-btn">
+            <img src="icon.png" alt="chat box icon btn">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class="container">
+            
+            <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/js.js"></script>
+    
+      
+    <script>
+        function clsText(obj){
+            var clickedTxt = $(obj).text();
+             var clsText = document.getElementById("userText");
+          
+           
+            if (clsText.style.display === "none") {
+                clsText.style.display = "block";
+                clsText.innerHTML=clickedTxt;
+            } else {
+                clsText.style.display = "none";
+            }
+           
+         }
+         function myFunction() {
+             var x = document.getElementById("myDIV");
+            
+             if (x.style.display === "none") {
+                 x.style.display = "block";
+                
+             } else {
+                 x.style.display = "none";
+             }
+         }
+
+         function myFunction2() {
+             var x = document.getElementById("div2");
+             if (x.style.display === "none") {
+                 x.style.display = "block";
+             } else {
+                 x.style.display = "none";
+             }
+         }
+     </script>
+
+
+</body>
+
+</html>
